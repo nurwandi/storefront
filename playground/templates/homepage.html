@@ -1,0 +1,15 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>homepage</title>
+</head>
+<body>
+<h1>welcome to the homepage {{name}}</h1>
+<ul>
+    {% for product in products %}
+    <li>{{product.title}} - {{product.collection.title}}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
